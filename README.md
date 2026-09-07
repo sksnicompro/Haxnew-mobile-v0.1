@@ -60,4 +60,3 @@ haxnew://auth
 - Los botones de settings.js que abrian paneles removidos (fps, ping, clock,
   room-info, spotify) van a quedar visibles pero sin hacer nada al tocarlos.
   Avisen si quieren que se limpien del menu tambien.
-"# Haxnew-mobile-v0.1" 

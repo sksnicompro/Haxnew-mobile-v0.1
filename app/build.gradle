@@ -7,12 +7,17 @@ android {
     namespace 'com.haxnew.mobile'
     compileSdk 34
 
+    buildFeatures {
+        buildConfig true
+    }
+
     defaultConfig {
         applicationId "com.haxnew.mobile"
         minSdk 26
         targetSdk 34
         versionCode 1
         versionName "1.0"
+        buildConfigField "String", "DISCORD_CLIENT_SECRET", "\"${System.getenv('DISCORD_CLIENT_SECRET') ?: ''}\""
     }
 
     buildTypes {

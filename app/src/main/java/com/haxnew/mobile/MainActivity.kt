@@ -70,8 +70,7 @@ class MainActivity : AppCompatActivity() {
         // "virtual" para que el WebView (y los scripts inyectados) puedan
         // pedirlos con fetch/<script src> normal, sin permisos especiales.
         assetLoader = WebViewAssetLoader.Builder()
-            .addPathHandler("/extensions/", WebViewAssetLoader.AssetsPathHandler(this, "extensions"))
-            .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(this, "assets"))
+            .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(this))
             .build()
 
         webView.settings.javaScriptEnabled = true
